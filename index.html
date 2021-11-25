@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T.Venhorst</title>
+    <!--hier een link naar de stylesheet, style.css-->
+    <link rel="stylesheet" href="css/style.css">
+    <!--hier een link naar script.js -->
+    <script src="js/script.js" defer></script>
+    <!-- Dit staat toe dat het externe JavaScript-bestand wordt uitgevoerd  --->
+</head>
+<body>
+
+    <div>
+        <button onclick="getName('T.Venhorst');">klik op de button</button> 
+        <!--De pagina zegt mijn naam boven aan -->
+    </div>
+
+    <div>
+        <p>Klik een paar keer op het plaatje hieronder</p>
+        <img id="hide" onclick="hideMe();" src="images/item-1.png">
+        <!-- ALs ik op de foto click dan hide die de foto van images/item-1.png en komt images/item-2.png tevoorschijn -->
+        <img id="show" onclick="show();" src="images/item-2.png">
+        <!-- Als ik op de foto click dan hide die de foto van images/item-2.png en komt images/item-1.png tevoorschijn -->
+    </div>
+
+    <div>
+        <p class="som">als ik op de button hieronder klik wat is hier dan de tekst?</p>
+        <!-- de functie krijgt de waarde 5 doorgegeven en voert een som uit, en vervolgens met document.querySelector (".som") JavaScript ziet met welke html-tag de som-klasse is gekoppeld en vervangt de inhoud door het antwoord.  --> 
+        <button onclick="rekenen(5);">Bereken, klik op mij!</button>
+        <!-- De fucntie "rekenen(5)" wordt met het getal 5 aangeroepend waarbij de getalen elke keer met 3 word opgeteld -->
+        <!-- 5 staat gelijk aan 8, 6 doe wordt 9 en 4 wordt 7 er zit een verschil in van 3 cijfers elke keer-->
+    </div>
+
+    <div>
+        <p onclick="this.style.color='aqua';">Klik op mij!</p> 
+        <!-- De functie word wel aangeroepen -->
+        <!-- De kleur veranderd naar aqau met onclick -->
+    </div>
+
+    <div>
+        <p onclick="setColor(this, 'orange', '30px');">Klik ook op mij!</p> 
+        <!-- De functie word niet aangeroepen -->                                                                                                    
+        <!-- als ik click met 30px dan is die groter als je op "Klik ook op mij" clickt en alleen px blijft die even groot -->
+    </div>
+    
+</body>
+</html>
