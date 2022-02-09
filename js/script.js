@@ -17,7 +17,7 @@ function hideMe(){ // ja, je kan de naam van de functie veranderen
     // de image veranderd en wordt aangeroepen in regel 23
 
 function show(){ //De naam van de functie veranderd in regel 25
-    document.getElementById("hide").style.display = "block"; // getElementById zoekt in de HTML voor elk HTML-element
+    document.getElementById("hide").style.display = "block"; // getElementById zoekt in de HTML voor elk HTML-elementen
     document.getElementById("show").style.display = "none";     
     // in deze functie komt de image tevoorschijn en blocked de anderen image zodat die niet meer te zien is
 }
